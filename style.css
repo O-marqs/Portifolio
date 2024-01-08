@@ -24,6 +24,7 @@ h2 {
     font-weight: bold;
     font-size: 1.5em; /* Ajuste o tamanho conforme necessário */
     text-align: center; /* Nova regra para centralizar h2 */
+    color: #001f3f; /* Cor Azul Escuro para o título "Sobre Mim" */
 }
 
 nav ul {
@@ -39,7 +40,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: inherit;
+    color: #001f3f; /* Cor Azul Escuro para links de navegação */
     font-weight: bold;
 }
 
@@ -53,36 +54,93 @@ nav a {
 }
 
 .cta-button:hover, .project a:hover {
-    background-color: #001f3f;
+    background-color: #001f3f; /* Cor Azul Escuro ao passar o mouse */
 }
 
 section {
     padding: 20px;
 }
 
-.project {
+.sobre-mim-section {
+    background-color: #ecf0f1;
+    color: #001f3f;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo h2 {
     margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-    color: #ecf0f1;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto,
+.foto {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.texto {
+    background-color: #ecf0f1;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+    }
 }
 
 footer {
-    padding: 1em;
+    background-color: #001f3f;
+    color: #ecf0f1;
     text-align: center;
+    padding: 20px;
 }
 
-#sobre-mim h2 {
+h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info, .contact-form {
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form form {
+    max-width: 100%;
+    margin: 0;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Ajuste a altura desejada */
+}
+
+.social-icons {
+    text-align: right;
+    margin-top: 20px;
+    color: #2ecc71; /* Cor verde */
+}
+
+.contact-info {
+    width: 45%;
+    float: right; /* Adicionado para mover para o lado direito */
     text-align: center;
-}
-
-#sobre-mim img {
-    float: right;
-    max-width: 100px;
-    margin-left: 20px;
-}
-
-/* Adicionando uma classe para estilizar a descrição dos projetos */
-.project p {
-    margin-bottom: 1em;
+   
 }
