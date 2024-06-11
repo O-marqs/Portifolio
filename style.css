@@ -7,6 +7,10 @@ body {
 header {
     padding: 1em;
     text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+
 }
 
 h1, h2, h3 {
@@ -24,7 +28,7 @@ h2 {
     font-weight: bold;
     font-size: 1.5em; /* Ajuste o tamanho conforme necessário */
     text-align: center; /* Nova regra para centralizar h2 */
-    color: #001f3f; /* Cor Azul Escuro para o título "Sobre Mim" */
+    color: #ecf0f1; /* Cor Azul Escuro para o título "Sobre Mim" */
 }
 
 nav ul {
@@ -62,8 +66,8 @@ section {
 }
 
 .sobre-mim-section {
-    background-color: #ecf0f1;
-    color: #001f3f;
+    background-color: #001f3f;
+    color: #ecf0f1;
     text-align: center;
     padding: 20px;
 }
@@ -87,7 +91,7 @@ section {
 }
 
 .texto {
-    background-color: #ecf0f1;
+    background-color: #001f3f;
 }
 
 /* Adaptação para telas menores */
@@ -102,6 +106,7 @@ footer {
     color: #ecf0f1;
     text-align: center;
     padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 h2 {
