@@ -1,4 +1,3 @@
-<!-- Pequeno comentário para forçar uma atualização -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Projeto</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@700&family=Exo:wght@700&display=swap">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Avenir', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FDFDFD;
+            color: #3c526a;
+        }
+
+        header {
+            background-color: #F0F4F8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .left-section .back-link {
+            color: #48D8B2;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .left-section .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .right-section {
+            text-align: center;
+            flex: 1;
+        }
+
+        .right-section h1 {
+            color: #436E95;
+            margin: 0;
+        }
+
+        .right-section p {
+            margin: 5px 0 0 0;
+            color: #3c526a;
+        }
+
+        .github-link {
+            display: inline-block;
+            background-color: #436E95;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-link:hover {
+            background-color: #345d7d;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .description-container, .video-container {
+            width: 48%;
+        }
+
+        .description-container p {
+            text-align: justify;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #436E95;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description-container, .video-container {
+                width: 100%;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Calculadora Orientada a Objetos</h1>
-        <p>Tecnologias utilizadas: <span class="highlight">Python</span></p>
+        <div class="left-section">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Voltar</a>
+        </div>
+        <div class="right-section">
+            <h1>Calculadora Orientada a Objetos</h1>
+            <p>Tecnologias utilizadas: <span style="color: #48D8B2;">Python</span></p>
+        </div>
     </header>
     <main>
-        <p>Este projeto é uma calculadora simples desenvolvida para demonstrar conhecimentos em programação orientada a objetos (POO). A calculadora permite realizar operações matemáticas básicas como adição, subtração, multiplicação e divisão. A estrutura do código utiliza os princípios de encapsulamento, herança e polimorfismo, proporcionando um design modular e reutilizável. Este projeto serve como um exemplo prático das capacidades e vantagens da POO em um contexto de desenvolvimento de software.
-        </p>
-        <a href="https://github.com/O-marqs/cientify-calculate" target="_blank">Link para o GitHub</a>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OKaZKzMGP3c?si=b3nZTusN1zawb3Jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        <div class="content-container">
+            <div class="description-container">
+                <div class="section-title">Descrição</div>
+                <p>Este projeto é uma calculadora simples desenvolvida para demonstrar conhecimentos em programação orientada a objetos (POO). A calculadora permite realizar operações matemáticas básicas como adição, subtração, multiplicação e divisão. A estrutura do código utiliza os princípios de encapsulamento, herança e polimorfismo, proporcionando um design modular e reutilizável. Este projeto serve como um exemplo prático das capacidades e vantagens da POO em um contexto de desenvolvimento de software.</p>
+                <a href="https://github.com/O-marqs/cientify-calculate" target="_blank" class="github-link">Ver no GitHub</a>
+            </div>
+            <div class="video-container">
+                <div class="section-title">Vídeo Apresentação</div>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/OKaZKzMGP3c?si=b3nZTusN1zawb3Jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 </body>
 </html>
